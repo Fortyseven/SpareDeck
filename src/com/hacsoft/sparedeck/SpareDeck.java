@@ -121,8 +121,11 @@ public class SpareDeck extends Activity
 
         this.prefs.edit().putString( PREF_LASTVER, this.getString( R.string.version ) ).commit();
 
-        Intent i = new Intent( this, WhatsNew.class );
+        Intent i = new Intent(this, About.class);
         startActivity( i );
+
+        //Intent i = new Intent( this, WhatsNew.class );
+        //startActivity( i );
     }
 
     @Override

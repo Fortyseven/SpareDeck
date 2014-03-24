@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-	<string name="app_name">SpareDeck</string>
-	<string name="version">Release 4</string>
-	
-	<string name="about_message"><b>\"Because of the nature of Moore\'s law, anything that an extremely clever graphics programmer can do at one point can be replicated by a merely competent programmer some number of years later.\"</b> - John Carmack</string>
-	<string name="about_whatsnewtext">What\'s New?</string>
-	<string name="about_whatsnew"><li>Bug fixes; source now freely available on GitHub</li></string>
-	<string name="deckselect_menu">Select a Deck</string>	
+    <string name="app_name">SpareDeck</string>
+    <string name="version">Release 6</string>
+
+    <string name="about_message"><b>\"Because of the nature of Moore\'s law, anything that an extremely clever graphics programmer can do at one point can be replicated by a merely competent programmer some number of years later.\"</b> - John Carmack</string>
+    <string name="about_whatsnewtext">What\'s New?</string>
+    <string name="about_whatsnew"><li>Bug fixes; source now freely available on GitHub</li></string>
+    <string name="deckselect_menu">Select a Deck</string>
+    <string name="about_title">About</string>
+    <string name="button_ok">OK</string>
 </resources>
 
 
