@@ -15,7 +15,7 @@ public class WhatsNew extends Activity implements OnClickListener
         super.onCreate( savedInstanceState );
         setContentView( R.layout.whatsnew );
         setTitle( R.string.about_whatsnewtext );
-        getWindow().setLayout( LayoutParams.FILL_PARENT, LayoutParams.FILL_PARENT );
+        getWindow().setLayout( LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT );
         ( (Button) findViewById( R.id.OK ) ).setOnClickListener( this );
     }
 

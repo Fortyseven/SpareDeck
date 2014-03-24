@@ -67,7 +67,7 @@ public class SpareDeck extends Activity
             }
 
             ( (ImageView) ( convertView ) ).setImageResource( decks.get( position ).getThumbId() );
-            ( (ImageView) ( convertView ) ).setLayoutParams( new GridView.LayoutParams( LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT ) );
+            ( (ImageView) ( convertView ) ).setLayoutParams( new GridView.LayoutParams( LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT ) );
             ( (ImageView) ( convertView ) ).setScaleType( ImageView.ScaleType.FIT_CENTER );
             // ((ImageView)(convertView)).setBackgroundResource(
             // mGalleryItemBackground );
