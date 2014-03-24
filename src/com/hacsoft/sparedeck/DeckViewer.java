@@ -65,9 +65,6 @@ public class DeckViewer extends Activity
         mContent.addView( iv );
     }
 
-    /**
-     * ***************************************************************************
-     */
     public void updateSettings()
     {
         if ( prefs.getBoolean( "stay_awake", false ) ) {
@@ -92,7 +89,6 @@ public class DeckViewer extends Activity
 
         mywindow.setAttributes( lp );
     }
-
 }
 
 // public class DeckViewer extends Activity

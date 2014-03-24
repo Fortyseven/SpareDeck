@@ -1,7 +1,6 @@
 package com.hacsoft.sparedeck;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -9,13 +8,9 @@ import android.preference.PreferenceManager;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.ViewGroup.LayoutParams;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
-import android.widget.BaseAdapter;
 import android.widget.GridView;
-import android.widget.ImageView;
 
 import java.util.Arrays;
 import java.util.List;
@@ -26,56 +21,12 @@ public class SpareDeck extends Activity
     static final int    MENU_ABOUT      = 100;
     static final int    MENU_SHOWCONFIG = 101;
 
-    private static List<Deck> decks = null;
+    public static List<Deck> decks = null;
 
     private SharedPreferences prefs = null;
 
     // private final Deck deck_pokedex = null;
 
-    public class DeckSelectAdapter extends BaseAdapter
-    {
-        private final Context m_context;
-
-        public DeckSelectAdapter( Context context, int textViewResourceId )
-        {
-            this.m_context = context;
-        }
-
-        @Override
-        public int getCount()
-        {
-            return decks.size();
-        }
-
-        @Override
-        public Object getItem( int position )
-        {
-            return decks.get( position );
-        }
-
-        @Override
-        public long getItemId( int position )
-        {
-            return decks.get( position ).getThumbId();
-        }
-
-        @Override
-        public View getView( int position, View convertView, ViewGroup parent )
-        {
-            if ( convertView == null ) {
-                convertView = new ImageView( this.m_context );
-            }
-
-            ( (ImageView) ( convertView ) ).setImageResource( decks.get( position ).getThumbId() );
-            ( (ImageView) ( convertView ) ).setLayoutParams( new GridView.LayoutParams( LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT ) );
-            ( (ImageView) ( convertView ) ).setScaleType( ImageView.ScaleType.FIT_CENTER );
-            // ((ImageView)(convertView)).setBackgroundResource(
-            // mGalleryItemBackground );
-
-            return convertView;
-        }
-
-    }
 
     @Override
     protected void onCreate( Bundle savedInstanceState )
