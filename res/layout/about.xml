@@ -1,64 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent" >
+            android:background="@drawable/grad_grey"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
 
     <LinearLayout
-        android:id="@+id/aboutlayout"
-        android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:orientation="vertical"
-        android:padding="10dip" >
+            android:id="@+id/aboutlayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical"
+            android:padding="10dip">
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:shadowColor="#FF00FF"
-            android:shadowDx="1"
-            android:shadowDy="1"
-            android:shadowRadius="2"
-            android:text="@+string/app_name"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:typeface="monospace" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center_horizontal"
+                android:shadowColor="#FF00FF"
+                android:shadowDx="1"
+                android:shadowDy="1"
+                android:shadowRadius="2"
+                android:text="@string/app_name"
+                android:textSize="48sp"
+                android:textStyle="bold"
+                android:typeface="monospace"/>
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@+string/version"
-            android:textSize="24sp" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:textColor="@android:color/holo_purple"
+                android:text="@string/version"
+                android:textSize="24sp"/>
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@+string/about_message"
-            android:textSize="12sp"
-            android:textStyle="italic"
-            android:typeface="serif" />
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_message"
+                android:textSize="14sp"
+                android:textStyle="italic"
+                android:typeface="serif"/>
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center_horizontal"
-            android:text="@+string/about_whatsnewtext"
-            android:textSize="18sp"
-            android:textStyle="bold" />
+                android:paddingTop="30dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:fontFamily="sans-serif-condensed"
+                android:text="@string/about_whatsnewtext"
+                android:textColor="@android:color/holo_orange_light"
+                android:textSize="24sp"
+                android:textStyle="bold"/>
 
         <TextView
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="@+string/about_whatsnew"
-            android:textSize="12sp" />
+                android:paddingTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/about_whatsnew"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="16sp"/>
 
         <Button
-            android:id="@+id/OK"
-            android:layout_width="fill_parent"
-            android:layout_height="40dip"
-            android:layout_marginTop="5dip"
-            android:gravity="center"
-            android:text="OK" />
+                android:layout_marginTop="20dip"
+                android:id="@+id/OK"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="OK"/>
     </LinearLayout>
 
 </ScrollView>

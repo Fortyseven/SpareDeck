@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.WindowManager.LayoutParams;
-import android.widget.Button;
 
 public class WhatsNew extends Activity implements OnClickListener
 {
@@ -16,7 +15,8 @@ public class WhatsNew extends Activity implements OnClickListener
         setContentView( R.layout.whatsnew );
         setTitle( R.string.about_whatsnewtext );
         getWindow().setLayout( LayoutParams.MATCH_PARENT, LayoutParams.MATCH_PARENT );
-        ( (Button) findViewById( R.id.OK ) ).setOnClickListener( this );
+
+        findViewById( R.id.OK ).setOnClickListener( this );
     }
 
     @Override
