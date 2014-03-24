@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/aboutlayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:padding="10dip" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:shadowColor="#FF00FF"
+            android:shadowDx="1"
+            android:shadowDy="1"
+            android:shadowRadius="2"
+            android:text="@+string/app_name"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:typeface="monospace" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@+string/version"
+            android:textSize="24sp" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+string/about_message"
+            android:textSize="12sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="@+string/about_whatsnewtext"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@+string/about_whatsnew"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/OK"
+            android:layout_width="fill_parent"
+            android:layout_height="40dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:text="OK" />
+    </LinearLayout>
+
+</ScrollView>

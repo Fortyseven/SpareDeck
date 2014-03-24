@@ -1,0 +1,14 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:drawable/presence_audio_online"
+    android:gravity="center_vertical|center_horizontal" >
+
+    <com.hacsoft.sparedeck.pokedex.CodeGridView
+        android:id="@+id/codegrid"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+    </com.hacsoft.sparedeck.pokedex.CodeGridView>
+
+</LinearLayout>

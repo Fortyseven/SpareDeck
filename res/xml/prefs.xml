@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory
+        android:key="first_category"
+        android:title="General" >
+        <CheckBoxPreference
+            android:key="stay_awake"
+            android:summary="Force screen to stay on while app is active."
+            android:title="Stay awake" />
+
+        <com.hlidskialf.android.preference.SeekBarPreference
+            android:defaultValue="0"
+            android:dialogMessage="NOTE: 0% = Auto Brightness"
+            android:key="screen_brightness"
+            android:max="100"
+            android:summary="How bright to keep the screen while app is active."
+            android:text="%"
+            android:title="Screen Brightness" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
