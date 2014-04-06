@@ -14,3 +14,5 @@ I also discovered another while testing a quick build: the brightness setting di
 There was also an attempt made at generating the QR code for the 3DS Pokedex app, but I never finished it. Have at it.
 
 Anyway, as ever, contribute or die! ;)
+
+(I should note that this was pretty early in my Android days, don't kill me.)
