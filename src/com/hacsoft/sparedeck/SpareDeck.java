@@ -12,8 +12,12 @@ import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
 
-import java.util.Arrays;
-import java.util.List;
+import com.hacsoft.sparedeck.decks.Deck;
+import com.hacsoft.sparedeck.decks.IcarusDeck;
+import com.hacsoft.sparedeck.decks.N3dsDeck;
+import com.hacsoft.sparedeck.decks.VitaDeck;
+
+import java.util.ArrayList;
 
 public class SpareDeck extends Activity
 {
@@ -21,7 +25,7 @@ public class SpareDeck extends Activity
     static final int    MENU_ABOUT      = 100;
     static final int    MENU_SHOWCONFIG = 101;
 
-    public static List<Deck> decks = null;
+    public static ArrayList<Deck> decks = null;
 
     private SharedPreferences prefs = null;
 
@@ -38,31 +42,14 @@ public class SpareDeck extends Activity
         this.prefs = PreferenceManager.getDefaultSharedPreferences( this );
 
         // define our decks
-        Deck deck_default = new Deck( "Original 3DS AR Deck", R.drawable.deckoriginal );
 
-        deck_default.addCard( "A-1: Question Block [?]", R.drawable.a1 );
-        deck_default.addCard( "A-2: Mario", R.drawable.a2 );
-        deck_default.addCard( "A-3: Link", R.drawable.a3 );
-        deck_default.addCard( "A-4: Kirby", R.drawable.a4 );
-        deck_default.addCard( "A-5: Samus", R.drawable.a5 );
-        deck_default.addCard( "A-6: Pikmin", R.drawable.a6 );
+        decks = new ArrayList<Deck>( 0 );
 
-        Deck deck_icarus = new Deck( "Kid Icarus: Uprising", R.drawable.deckicarus );
-        deck_icarus.addCard( "Pit", R.drawable.icaruspit );
-        deck_icarus.addCard( "Palutena", R.drawable.icaruspet );
-        deck_icarus.addCard( "Medusa", R.drawable.icarusmed );
-
-        Deck deck_vita = new Deck( "PS Vita", R.drawable.deckvita );
-        deck_vita.addCard( "01", R.drawable.vita01 );
-        deck_vita.addCard( "02", R.drawable.vita02 );
-        deck_vita.addCard( "03", R.drawable.vita03 );
-        deck_vita.addCard( "04", R.drawable.vita04 );
-        deck_vita.addCard( "05", R.drawable.vita05 );
-        deck_vita.addCard( "06", R.drawable.vita06 );
+        decks.add( new N3dsDeck() );
+        decks.add( new IcarusDeck() );
+        decks.add( new VitaDeck() );
 
         // this.deck_pokedex = new Deck( "Pokedex 3D", R.drawable.deckpokedex );
-
-        decks = Arrays.asList( deck_default, deck_icarus, deck_vita );
 
         // populate the gallery with our decks fed into a modified arrayadapter
 

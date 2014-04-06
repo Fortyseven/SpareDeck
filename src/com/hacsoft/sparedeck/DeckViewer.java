@@ -10,6 +10,8 @@ import android.widget.HorizontalScrollView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
+import com.hacsoft.sparedeck.decks.Deck;
+
 public class DeckViewer extends Activity
 {
     private Deck              mDeck    = null;
@@ -33,9 +35,9 @@ public class DeckViewer extends Activity
         iv = new ImageView( this );
         iv.setImageResource( R.drawable.vita01 );
         mContent.addView( iv );
-        for(int i = 0; i < mDeck.count(); i++) {
+        for ( int i = 0; i < mDeck.getCardCount(); i++ ) {
             iv = new ImageView( this );
-            iv.setImageResource( mDeck.getCard( i ).getId() );
+            iv.setImageResource( mDeck.getCard( i ).image_resource );
             mContent.addView( iv );
         }
 //        iv = new ImageView( this );

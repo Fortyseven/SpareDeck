@@ -33,7 +33,7 @@ public class DeckSelectAdapter extends BaseAdapter
     @Override
     public long getItemId( int position )
     {
-        return SpareDeck.decks.get( position ).getThumbId();
+        return SpareDeck.decks.get( position ).getDeckIconRes();
     }
 
     @Override
@@ -43,7 +43,7 @@ public class DeckSelectAdapter extends BaseAdapter
             convertView = new ImageView( this.m_context );
         }
 
-        ( (ImageView) ( convertView ) ).setImageResource( SpareDeck.decks.get( position ).getThumbId() );
+        ( (ImageView) ( convertView ) ).setImageResource( SpareDeck.decks.get( position ).getDeckIconRes() );
         ( (ImageView) ( convertView ) ).setLayoutParams( new GridView.LayoutParams( ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT ) );
         ( (ImageView) ( convertView ) ).setScaleType( ImageView.ScaleType.FIT_CENTER );
         // ((ImageView)(convertView)).setBackgroundResource(
